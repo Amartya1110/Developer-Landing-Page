@@ -1,0 +1,380 @@
+/* POPPINS FONT FAMILY */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Righteous&display=swap");
+
+html {
+  box-sizing: border-box;
+}
+
+*, *::before, *::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+  font-family: "Poppins", sans-serif;
+  /* To make blinking cursor disappear when clicked on an element */
+  caret-color: rgba(0,0,0,0);
+}
+body {
+  background-color: #d4d4dc;
+}
+
+
+
+/* ================================= */
+/* =========== Nav Bar ========== */
+/* ================================= */
+
+header {
+  background-color: blue;
+  position: relative;
+  padding: 30px;
+  height: 75vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+header>nav {
+  position: absolute;
+  top: 30px;
+  right: 0;
+  margin: 0 100px;
+  box-sizing: content-box;
+}
+
+.nav-item {
+  color: white;
+  padding: 0 20px;
+  /* Here if we keep the box-sizing as "border-box" the the svg content will shrink down to width: 0 */
+  /* Hence before adding padding to the nav-items, make the box-sizing of the svg as "content-box" */
+  /* box-sizing: content-box; */
+}
+
+.nav-item-active {
+  background-color: #fff;
+  color: blue;
+  font-size: 15px;
+  font-weight: bold;
+  padding: 5px 10px;
+}
+
+svg.nav-item {
+  height: 20px;
+  padding: 0 10px;
+  position: absolute;
+  top: 50%;
+  transform: translate(0, -50%);
+  /* margin: 3.2px 0; */
+}
+
+/* header-text */
+.header-text {
+  position: relative;
+  z-index: 2;
+}
+
+.header-text>img {
+  width: 70px;
+}
+
+.header-text>h2 {
+  color: #fff;
+  font-size: 50px;
+  font-weight: 100;
+}
+
+.header-text>p {
+  color:#fff;
+  font-size: 20px;
+  font-weight: lighter;
+  opacity: 0.9;
+}
+
+
+.header-image {
+  height: 80vh;
+  position: absolute;
+  right: 0;
+  top: 10vh;
+}
+
+/* companies*/
+.companies {
+ margin: 5vh 0 20vh 40px;
+}
+
+.company-items {
+  text-decoration: none;
+  font-size: 30px;
+  font-weight: bolder;
+  font-family: "Righteous", sans-serif;
+  color: #000;
+  padding: 0 20px;
+  opacity: 0.8;
+}
+
+/* API */
+.api {
+  padding: 30px;
+}
+
+.api-heading {
+  font-size: 45px;
+  font-weight: 1000;
+  margin-bottom: 50px;
+}
+
+/* cards */
+.cards {
+  display: flex;
+}
+
+.card-active {
+  background-color: #fff;
+  flex-grow: 1;
+  border-radius: 10px;
+}
+
+.card {
+  flex-grow: 1;
+}
+
+
+
+.card-active>* {
+  padding: 10px;
+}
+
+.card>* {
+  padding: 5px 20px;
+}
+
+.card-head-active {
+  font-size: 25px;
+  color: #5a31fc;
+}
+
+.card-head {
+  font-size: 25px;
+}
+
+.card-body {
+  font-size: 13px;
+  font-weight: bold;
+  padding-top: 0;
+}
+
+.arrow {
+  margin: auto 30px;
+  position: relative;
+  align-self: center;
+  width: 50px;
+  height: 50px;
+  background-color: #5a31fc;
+  border-radius: 25px;
+}
+
+.inside-arrow {
+  height: 20px;
+  width: 20px;
+  border-top: 5px solid #fff;
+  border-right: 5px solid #fff;
+  border-radius: 4px;
+  transform:rotate(45deg);
+  position: absolute;
+  top: 15px;
+  left: 12px;
+}
+
+.arrow:hover {
+  cursor: pointer;
+}
+
+
+/* =========== blog section ============ */
+.blog-heading {
+  font-size: 25px;
+  margin: 50px 30px;
+}
+
+/* blog cards */
+.blog-cards {
+  margin: 50px 30px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.blog-card {
+  /* min-width: 550px; */
+  display: flex;
+}
+
+.blog-image>img {
+  /* border: 3px solid red;
+  display: inline-block; */
+  height: 400px;
+}
+
+.blog-rem {
+  padding: 50px 10px 50px 50px;
+  flex-grow: 1;
+  background-color: #fff;
+  height: 400px;
+  width: 300px;
+  position: relative;
+}
+
+.blog-content>h6 {
+  color: #5a31fc;
+  padding: 20px 0;
+  font-family: "Righteous", sans-serif;
+  font-weight: bolder;
+}
+
+.blog-content>h3 {
+  padding: 20px 0;
+  font-weight: bolder;
+}
+
+.blog-content>small {
+  font-size: 13px;
+  font-weight: 600;
+  opacity: 0.8;
+}
+
+.blog-bottom {
+  position: absolute;
+  bottom: -20px;
+  
+}
+
+.blog-card-bottom-image {
+  border: 5px solid #fff;
+  border-radius: 40.2px;
+}
+
+.blog-author>b {
+  position: absolute;
+  bottom: 10px;
+  right: 80px;
+  font-size: 13px;
+  font-weight: 700;
+}
+
+
+/* =============== FAQ section ============== */
+
+.faq-section {
+  background-color: #9cd6f5;
+  height: 400px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.faq-content {
+  padding: 30px;
+}
+
+.faq-content>h2 {
+  font-size: 40px;
+}
+.faq-content>h4 {
+  font-size: 12px;
+  font-weight: 300;
+}
+.faq-content>h4:last-of-type {
+  font-size: 20px;
+  font-weight: 700;
+  margin: 40px 0;
+}
+
+.faq-content>button {
+  font-weight: 600;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  background-color: #5a31fc;
+  color: #fff;
+}
+
+.faq-image>img {
+  height: 400px;
+}
+
+/* ============ download section ============ */
+.download-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 100px 30px;
+}
+
+.download-content>h1>span {
+  font-weight: 400;
+}
+
+.download-email>form {
+  margin: 0px 100px;
+  display: flex;
+  justify-content: space-between;
+  padding: 5px;
+  background-color: #b8d8e9;
+  width: 500px;
+  border-radius: 32px;
+}
+
+.download-email>form>input {
+  background-color: #b8d8e9;
+  border: none;
+  padding: 0 20px;
+}
+
+.download-email>form>input::placeholder {
+  opacity: 1;
+  color: #000;
+}
+
+.download-email>form>button {
+  background-color: #5a31fc;
+  padding: 10px 20px;
+  color: #fff;
+  border-radius: 22px;
+}
+
+/* ============== footer section ============= */
+.footer-section {
+  background-color: #5a31fc;
+  padding: 50px 30px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.list {
+  margin: 20px 0;
+  display: flex;
+  list-style: none;
+}
+
+.list-items {
+  color: #fff;
+  font-weight: 400;
+  font-size: 13px;
+  margin: 0px 10px;
+}
+.pipe::after{
+  content: "";
+  width: 2px;
+  height: 13px;
+  /* To apply height an width to the ::after element, make its display as "inline-block" */
+  display: inline-block;
+  background-color: #fff;
+  margin-left:20px;
+}
+
+.logos-list {
+  margin: 20px 0;
+  display: flex;
+  list-style: none;
+}
+
+
